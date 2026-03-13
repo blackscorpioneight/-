@@ -1,0 +1,175 @@
+:root {
+            --primary-color: #2E8BCC;
+            --secondary-color: #e74c3c;
+            --light-color: #f4f4f4;
+            --dark-color: #333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            min-height: 100vh;
+            padding: 120px 0 80px;
+        }
+
+        #header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            width: 100%;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            height: 60px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        #header h1 {
+            font-size: clamp(20px, 5vw, 24px);
+            font-weight: 700;
+        }
+
+        #nav {
+            background-color: white;
+            width: 100%;
+            position: fixed;
+            top: 60px;
+            z-index: 999;
+            height: 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        #nav::-webkit-scrollbar {
+            display: none;
+        }
+        
+        #nav a {
+            color: #6a11cb;
+            font-size: clamp(14px, 3.5vw, 16px);
+            padding: 4px 8px;
+            margin: 0 0px;
+            position: relative;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        
+        #nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #6a11cb;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        #nav a:hover:after {
+            width: 100%;
+        }
+        
+        #nav a.active {
+            color: #e74c3c;
+        }
+        
+        #nav a.active:after {
+            background: #e74c3c;
+            width: 100%;
+        }
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+        .content-box {
+            background-color: white;
+            width: 90%;
+            max-width: 500px;
+            min-width:280px;
+            padding: 25px;
+            margin: 35px auto;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .menu-link {
+            display: block;
+            background-color: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: clamp(18px, 5vw, 22px);
+            transition: all 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .menu-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            padding: 12px;
+            text-align: center;
+            font-size: clamp(14px, 3vw, 16px);
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 110px 0 70px;
+            }
+            
+            .content-box {
+                padding: 15px;
+                margin: 20px auto;
+            }
+            
+            .menu-link {
+                padding: 10px;
+                margin: 8px 0;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+    .content-box {
+        max-width: 600px; /* أكبر حجم للشاشات الكبيرة جداً */
+        padding: 30px;
+    }
+    .menu-link{
+        font-size:2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-link {
+        font-size: 1rem; /* حجم أصغر قليلاً على الهاتف */
+    }
+}

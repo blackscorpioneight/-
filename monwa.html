@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اذكار منوعه</title>
+     <link rel="stylesheet" href="monwa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h1>أذكار متنوعة</h1>
+    </div>
+
+    <div id="nav">
+         <a href="index.html.html" class="active">الرئيسية</a>
+        <a href="sabh.html">أذكار الصباح</a>
+        <a href="masa.html">أذكار المساء</a>
+        <a href="quran.html">القرآن الكريم</a>
+    
+      </div>
+    
+    <div class="main-content">
+        <div class="container">
+            
+
+<!-- 1. دعاء لبس الثوب -->
+<div class="zekr-box">
+  <p class="zekr-text">الحمد لله الذي كساني هذا (الثوب) ورزقنيه من غير حول مني ولا قوة</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn1" onclick="decrementCounter('btn1', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط للذكر</span>
+  </button>
+</div>
+
+<!-- 2. دعاء دخول الخلاء -->
+<div class="zekr-box">
+  <p class="zekr-text">بسم الله، اللهم إني أعوذ بك من الخبث والخبائث</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn2" onclick="decrementCounter('btn2', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط للذكر</span>
+  </button>
+</div>
+
+<!-- 3. دعاء الخروج من الخلاء -->
+<div class="zekr-box">
+  <p class="zekr-text">غفرانك</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn3" onclick="decrementCounter('btn3', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط للذكر</span>
+  </button>
+</div>
+
+<!-- 4. دعاء الخروج من المنزل -->
+<div class="zekr-box">
+  <p class="zekr-text">بسم الله، توكلت على الله، ولا حول ولا قوة إلا بالله</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn4" onclick="decrementCounter('btn4', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط للذكر</span>
+  </button>
+</div>
+
+<!-- 5. دعاء دخول المنزل -->
+<div class="zekr-box">
+  <p class="zekr-text">بسم الله ولجنا، وبسم الله خرجنا، وعلى ربنا توكلنا</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn5" onclick="decrementCounter('btn5', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط للذكر</span>
+  </button>
+</div>
+
+<!-- 6. دعاء الأكل -->
+<div class="zekr-box">
+  <p class="zekr-text">بسم الله</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn6" onclick="decrementCounter('btn6', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط قبل الأكل</span>
+  </button>
+</div>
+
+<!-- 7. دعاء بعد الأكل -->
+<div class="zekr-box">
+  <p class="zekr-text">الحمد لله الذي أطعمنا وسقانا وجعلنا من المسلمين</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn7" onclick="decrementCounter('btn7', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط بعد الأكل</span>
+  </button>
+</div>
+
+<!-- 8. دعاء لبس الجديد -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم لك الحمد، أنت كسوتنيه، أسألك خيره وخير ما صُنع له، وأعوذ بك من شره وشر ما صُنع له</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn8" onclick="decrementCounter('btn8', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط للذكر</span>
+  </button>
+</div>
+
+<!-- 9. دعاء النوم -->
+<div class="zekr-box">
+  <p class="zekr-text">باسمك اللهم أموت وأحيا</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn9" onclick="decrementCounter('btn9', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط قبل النوم</span>
+  </button>
+</div>
+
+<!-- 10. دعاء الاستيقاظ -->
+<div class="zekr-box">
+  <p class="zekr-text">الحمد لله الذي أحيانا بعدما أماتنا وإليه النشور</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn10" onclick="decrementCounter('btn10', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند الاستيقاظ</span>
+  </button>
+</div>
+
+<!-- 11. دعاء الخروج من المسجد -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم إني أسألك من فضلك</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn11" onclick="decrementCounter('btn11', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند الخروج</span>
+  </button>
+</div>
+
+<!-- 12. دعاء دخول المسجد -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم افتح لي أبواب رحمتك</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn12" onclick="decrementCounter('btn12', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند الدخول</span>
+  </button>
+</div>
+
+<!-- 13. دعاء ركوب الدابة أو السيارة -->
+<div class="zekr-box">
+  <p class="zekr-text">سبحان الذي سخر لنا هذا وما كنا له مقرنين، وإنا إلى ربنا لمنقلبون</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn13" onclick="decrementCounter('btn13', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند الركوب</span>
+  </button>
+</div>
+
+<!-- 14. دعاء المطر -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم صيبًا نافعًا</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn14" onclick="decrementCounter('btn14', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند رؤية المطر</span>
+  </button>
+</div>
+
+<!-- 15. دعاء رؤية الهلال -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم أهله علينا بالأمن والإيمان، والسلامة والإسلام، ربي وربك الله</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn15" onclick="decrementCounter('btn15', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند رؤية الهلال</span>
+  </button>
+</div>
+
+<!-- 16. دعاء الغضب -->
+<div class="zekr-box">
+  <p class="zekr-text">أعوذ بالله من الشيطان الرجيم</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn16" onclick="decrementCounter('btn16', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند الغضب</span>
+  </button>
+</div>
+
+<!-- 17. دعاء الحزن والهم -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن، وضَلَع الدَّين، وغلبة الرجال</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn17" onclick="decrementCounter('btn17', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند الهم</span>
+  </button>
+</div>
+
+<!-- 18. دعاء رؤية المبتلى -->
+<div class="zekr-box">
+  <p class="zekr-text">الحمد لله الذي عافاني مما ابتلاك به، وفضلني على كثير ممن خلق تفضيلاً</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn18" onclick="decrementCounter('btn18', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند رؤية المبتلى</span>
+  </button>
+</div>
+
+<!-- 19. دعاء دخول السوق -->
+<div class="zekr-box">
+  <p class="zekr-text">لا إله إلا الله وحده لا شريك له، له الملك وله الحمد يحيي ويميت وهو حي لا يموت، بيده الخير وهو على كل شيء قدير</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn19" onclick="decrementCounter('btn19', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند دخول السوق</span>
+  </button>
+</div>
+
+<!-- 20. دعاء كفارة المجلس -->
+<div class="zekr-box">
+  <p class="zekr-text">سبحانك اللهم وبحمدك، أشهد أن لا إله إلا أنت، أستغفرك وأتوب إليك</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn20" onclick="decrementCounter('btn20', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند نهاية المجلس</span>
+  </button>
+</div>
+
+<!-- 21. دعاء السفر -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم إنا نسألك في سفرنا هذا البر والتقوى، ومن العمل ما ترضى</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn21" onclick="decrementCounter('btn21', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند السفر</span>
+  </button>
+</div>
+
+<!-- 22. دعاء الدخول على أهل البيت -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم إني أسألك خير المولج وخير المخرج، بسم الله ولجنا وبسم الله خرجنا وعلى الله ربنا توكلنا</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn22" onclick="decrementCounter('btn22', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند دخول المنزل</span>
+  </button>
+</div>
+
+<!-- 23. دعاء الخروج من المنزل -->
+<div class="zekr-box">
+  <p class="zekr-text">بسم الله، توكلت على الله، ولا حول ولا قوة إلا بالله</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn23" onclick="decrementCounter('btn23', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">اضغط عند الخروج</span>
+  </button>
+</div>
+
+<!-- 24. دعاء الدخول للمنزل -->
+<div class="zekr-box">
+  <p class="zekr-text">بسم الله ولجنا، وبسم الله خرجنا، وعلى ربنا توكلنا</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn24" onclick="decrementCounter('btn24', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند دخول البيت</span>
+  </button>
+</div>
+
+<!-- 25. دعاء قبل النوم -->
+<div class="zekr-box">
+  <p class="zekr-text">باسمك اللهم أموت وأحيا</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn25" onclick="decrementCounter('btn25', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">قبل النوم</span>
+  </button>
+</div>
+
+<!-- 26. دعاء الاستيقاظ -->
+<div class="zekr-box">
+  <p class="zekr-text">الحمد لله الذي أحيانا بعدما أماتنا وإليه النشور</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn26" onclick="decrementCounter('btn26', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند الاستيقاظ</span>
+  </button>
+</div>
+
+<!-- 27. دعاء رؤية الرعد -->
+<div class="zekr-box">
+  <p class="zekr-text">سبحان الذي يسبح الرعد بحمده والملائكة من خيفته</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn27" onclick="decrementCounter('btn27', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند سماع الرعد</span>
+  </button>
+</div>
+
+<!-- 28. دعاء الريح -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم إني أسألك خيرها، وخير ما فيها، وخير ما أرسلت به، وأعوذ بك من شرها، وشر ما فيها، وشر ما أرسلت به</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn28" onclick="decrementCounter('btn28', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند هبوب الرياح</span>
+  </button>
+</div>
+
+<!-- 29. دعاء الشفاء للمريض -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم رب الناس أذهب البأس، اشفِ أنت الشافي، لا شفاء إلا شفاؤك، شفاء لا يغادر سقمًا</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn29" onclick="decrementCounter('btn29', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">لدعاء المريض</span>
+  </button>
+</div>
+
+<!-- 30. دعاء لمن قال: إني أحبك في الله -->
+<div class="zekr-box">
+  <p class="zekr-text">أحبك الذي أحببتني له</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn30" onclick="decrementCounter('btn30', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند سماع "أحبك في الله"</span>
+  </button>
+</div>
+
+<!-- 31. دعاء عند المصيبة -->
+<div class="zekr-box">
+  <p class="zekr-text">إنا لله وإنا إليه راجعون، اللهم أجرني في مصيبتي واخلف لي خيرًا منها</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn31" onclick="decrementCounter('btn31', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند المصيبة</span>
+  </button>
+</div>
+
+<!-- 32. دعاء عند العطاس -->
+<div class="zekr-box">
+  <p class="zekr-text">الحمد لله</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn32" onclick="decrementCounter('btn32', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">بعد العطاس</span>
+  </button>
+</div>
+
+<!-- 33. الرد على العاطس -->
+<div class="zekr-box">
+  <p class="zekr-text">يرحمك الله</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn33" onclick="decrementCounter('btn33', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند سماع العطاس</span>
+  </button>
+</div>
+
+<!-- 34. دعاء دخول الخلاء -->
+<div class="zekr-box">
+  <p class="zekr-text">اللهم إني أعوذ بك من الخبث والخبائث</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn34" onclick="decrementCounter('btn34', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">قبل دخول الخلاء</span>
+  </button>
+</div>
+
+<!-- 35. دعاء الخروج من الخلاء -->
+<div class="zekr-box">
+  <p class="zekr-text">غفرانك</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn35" onclick="decrementCounter('btn35', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">بعد الخروج من الخلاء</span>
+  </button>
+</div>
+
+<!-- 36. دعاء الاستفتاح في الصلاة -->
+<div class="zekr-box">
+  <p class="zekr-text">سبحانك اللهم وبحمدك، وتبارك اسمك، وتعالى جدك، ولا إله غيرك</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn36" onclick="decrementCounter('btn36', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">في أول الصلاة</span>
+  </button>
+</div>
+
+<!-- 37. دعاء السجود -->
+<div class="zekr-box">
+  <p class="zekr-text">سبحان ربي الأعلى</p>
+  <span class="zekr-count">3 مرات</span>
+  <button class="counter-btn" id="btn37" onclick="decrementCounter('btn37', 3)">
+    <span class="counter-number">3</span>
+    <span class="counter-label">في السجود</span>
+  </button>
+</div>
+
+<!-- 38. دعاء الركوع -->
+<div class="zekr-box">
+  <p class="zekr-text">سبحان ربي العظيم</p>
+  <span class="zekr-count">3 مرات</span>
+  <button class="counter-btn" id="btn38" onclick="decrementCounter('btn38', 3)">
+    <span class="counter-number">3</span>
+    <span class="counter-label">في الركوع</span>
+  </button>
+</div>
+
+<!-- 39. دعاء رفع الرأس من الركوع -->
+<div class="zekr-box">
+  <p class="zekr-text">ربنا ولك الحمد</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn39" onclick="decrementCounter('btn39', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">بعد الركوع</span>
+  </button>
+</div>
+
+<!-- 40. دعاء بعد الوضوء -->
+<div class="zekr-box">
+  <p class="zekr-text">أشهد أن لا إله إلا الله وحده لا شريك له، وأشهد أن محمدًا عبده ورسوله، اللهم اجعلني من التوابين واجعلني من المتطهرين</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn40" onclick="decrementCounter('btn40', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">بعد الوضوء</span>
+  </button>
+</div>
+
+<!-- 41. دعاء دخول الخلاء -->
+<div class="zekr-box">
+  <p class="zekr-text">بِسْمِ اللَّهِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبَائِثِ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn41" onclick="decrementCounter('btn41', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند دخول الخلاء</span>
+  </button>
+</div>
+
+<!-- 42. دعاء الخروج من الخلاء -->
+<div class="zekr-box">
+  <p class="zekr-text">غُفْرَانَكَ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn42" onclick="decrementCounter('btn42', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند الخروج من الخلاء</span>
+  </button>
+</div>
+
+<!-- 43. دعاء لبس الثوب -->
+<div class="zekr-box">
+  <p class="zekr-text">الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا الثَّوْبَ وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn43" onclick="decrementCounter('btn43', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند لبس الثوب</span>
+  </button>
+</div>
+
+<!-- 44. دعاء نزع الثوب -->
+<div class="zekr-box">
+  <p class="zekr-text">بِسْمِ اللَّهِ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn44" onclick="decrementCounter('btn44', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند خلع الثوب</span>
+  </button>
+</div>
+
+<!-- 45. دعاء دخول المنزل -->
+<div class="zekr-box">
+  <p class="zekr-text">بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn45" onclick="decrementCounter('btn45', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند دخول المنزل</span>
+  </button>
+</div>
+
+<!-- 46. دعاء الخروج من المنزل -->
+<div class="zekr-box">
+  <p class="zekr-text">بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn46" onclick="decrementCounter('btn46', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند الخروج من المنزل</span>
+  </button>
+</div>
+
+<!-- 47. دعاء ركوب الدابة أو السيارة -->
+<div class="zekr-box">
+  <p class="zekr-text">سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنقَلِبُونَ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn47" onclick="decrementCounter('btn47', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند ركوب السيارة أو وسيلة النقل</span>
+  </button>
+</div>
+
+<!-- 48. دعاء السفر -->
+<div class="zekr-box">
+  <p class="zekr-text">اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا، وَاطْوِ عَنَّا بُعْدَهُ، اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الْأَهْلِ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn48" onclick="decrementCounter('btn48', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند بدء السفر</span>
+  </button>
+</div>
+
+<!-- 49. دعاء دخول السوق -->
+<div class="zekr-box">
+  <p class="zekr-text">لَا إِلَهَ إِلَّا اللَّهُ، وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، يُحْيِي وَيُمِيتُ، وَهُوَ حَيٌّ لَا يَمُوتُ، بِيَدِهِ الْخَيْرُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn49" onclick="decrementCounter('btn49', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند دخول السوق</span>
+  </button>
+</div>
+
+<!-- 50. دعاء زيارة القبور -->
+<div class="zekr-box">
+  <p class="zekr-text">السَّلَامُ عَلَيْكُمْ أَهْلَ الدِّيَارِ مِنَ الْمُؤْمِنِينَ وَالْمُسْلِمِينَ، وَإِنَّا إِنْ شَاءَ اللَّهُ بِكُمْ لَاحِقُونَ، أَسْأَلُ اللَّهَ لَنَا وَلَكُمُ الْعَافِيَةَ</p>
+  <span class="zekr-count">مرة واحدة</span>
+  <button class="counter-btn" id="btn50" onclick="decrementCounter('btn50', 1)">
+    <span class="counter-number">1</span>
+    <span class="counter-label">عند زيارة القبور</span>
+  </button>
+</div>
+      
+    </div>
+    
+    <div id="footer">
+        <p>Made with ❤️ by Black Scorpion</p>
+    </div>
+
+    <script>
+        function decrementCounter(btnId, initialCount) {
+            const btn = document.getElementById(btnId);
+            const counter = btn.querySelector('.counter-number');
+            let count = parseInt(counter.textContent);
+            
+            if (count > 0) {
+                count--;
+                counter.textContent = count;
+                
+                if (count === 0) {
+                    btn.classList.add('completed');
+                    btn.querySelector('.counter-label').textContent = 'تم التسبيح';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
